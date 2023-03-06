@@ -4,56 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tugas sesi 4</title>
+    <title>Menghitung Luas dan Keliling Lingkaran</title>
 </head>
 <body>
     <h1>
-        Belajar Java Script AlgorFitma
+        Menghitung Luas dan Keliling Lingkaran
     </h1>
     <script>
-        // belajar membuat algoritma perhitungan nilai
-        var nilai = 60
-        if (nilai >= 60) console.log("mahasiswa dinyatakan lulus")
-        else if (nilai < 60) console.log("mahasiswa dinyatakan tidak lulus")
-        else console.log("tidak sesuai")
+        // 2. membuat algoritma menghitung luas dan keliling lingkaran
+        // input yang diperlukan adalah nilai r dan phi
+        // STORE "r" with ay value
+        // STORE "phi" with value 3.14
+        var r = 7
+        var phi = 3.14
+
+        // 3. langkah kalkulasi
+        // rumus luas lingkaran phi * r * r
+        // CALCULATE "phi" TIMES "r" TIMES "r"
+        // SET "luas" value with calculation result
+        var luas = phi * r * r
         
-        // membuat algoritma luas persegi
-        // this code
-        var sisi = 5
-        var luas = sisi * sisi
-        console.log("luas persegi = " + luas)
 
-        // membuat algoritma jika kita lapar
-        // this code
-        var lapar = "lapar"
-        if (lapar === "lapar") console.log("makan")
-        else  console.log("tidak makan")
-
-        // menerapkan looping
-
-        // 1. while
-        // this code
-        var i = 0
-        while (i < 10) {
-        console.log ("while " + i)
-        i++;
-        }
-
-        // 2. do while
-        // this code
-        var angka = 0
-        do {
-        console.log("do while " + angka)
-        angka++;
-        }
-        while (angka < 10);
-
-        // 3. for
-        // this code
-        for (var i = 0; i < 10; i++) {
-        console.log("for " + i) 
-        }
-        // menggunakan nilai 0 s.d 10
+        //rumus keliling lingkaran 2 * phi * r
+        // CALCULTAE value 2 TIMES "phi" TIMES "r"
+        // SET "keliling" value with calculation result
+        var keliling = 2 * phi * r
+        
+        // 4. instruksi untuk menampilkan hasil kalkulasi
+        // DISPLAY "luas"
+        // DISPLAY "keliling"
+        console.log("luas lingkaran = " + luas)
+        console.log("keliling lingkaran adalah " + keliling)
+        
     </script>
 
 </body>
