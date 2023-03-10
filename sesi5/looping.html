@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Perulangan</title>
+</head>
+<body>
+    <button onclick="print()">Print 20x</button>
+    <div id="text"></div>
+    <script>
+        function print() {
+            const dt = document.getElementById("text")
+            let hitung = 0
+            for (let hitung = 0; hitung < 20; hitung = hitung + 1){
+                dt.innerHTML = dt.innerHTML + "<p>saya sudah belajar for loop!</p>"
+            }
+        }
+    </script>
+</body>
+</html>

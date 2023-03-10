@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hitung grade</title>
+</head>
+<body>
+    <label>Nilai:</label><input type="number" id="num"><br/>
+    <button onclick="hitungGrade()">Cek Grade</button>
+    <div id="grade"></div>
+
+     <script>
+        
+        function hitungGrade() {
+            const dt = document.getElementById("num")
+            let nilai = parseInt(dt.value)
+            console.log(nilai)
+
+            let grade = ""
+            if(nilai >= 90){
+                grade = "A"
+            } else if(nilai >= 80){
+                grade = "B"
+            } else if(nilai >= 70){
+                grade = "C"
+            } else if(nilai >= 60){
+                grade = "D"
+            } else {
+                grade = "E"
+            } 
+            document.getElementById("grade").innerHTML = grade
+            return grade
+        }
+    </script>
+    
+</body>
+</html>

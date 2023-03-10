@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Penulisan Javascript</title>
+    <script>
+        console.log("Hi, ini kode Javascript")
+    </script>
+</head>
+<body>
+    <!-- Isi Kontent -->
+    <script>
+        document.write("Saya mulai belajar Javascript!")
+    </script>
+
+    <h1>Penggunaan Variabel di JS</h1>
+
+    <!-- menampilkan nama dan lokasi menggunakan variabel-->
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+
+    <script>
+        var nama = "Workshop 4 Days"
+        var lokasi = "Online"
+
+        document.getElementById("nama").innerHTML = nama
+        document.getElementById("lokasi").innerHTML = lokasi
+ 
+    </script>
+
+    <h1>Tipe Data Number di JS</h1>
+    <!-- menggunakan tipe data number di Javascript -->
+    <div id="hasil"></div>
+
+    <script>
+        var angka = 80
+
+        document.getElementById("hasil").innerHTML = angka
+    </script>
+
+    <h1>Tipe Data Array di JS</h1>
+    <!-- menggunakan tipe data array di Javascript -->
+    <div id="transport"></div>
+
+    <script>
+        var transport = ["Mobil", "Motor", "Pesawat", "Kapal"]
+
+        document.getElementById("transport").innerHTML = transport[0]
+    </script>
+
+    <h1>Tipe Data Object di JS</h1>
+    <!-- menggunakan tipe data object di Javascript -->
+    <div id="manusia"></div>
+
+    <script>
+        var manusia = {
+            nama: "wijaya",
+            asal: "jakarta",
+            usia: 26
+        }
+        document.getElementById("manusia").innerHTML = manusia.nama + " tinggal di " + manusia.asal
+    </script>
+    
+    <h1>Pengguaan operator aritmatka di JS</h1>
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+    <div id="h8"></div>
+    <div id="hactiv8"></div>
+
+    <script>
+        hello()
+        intro()
+
+        var bil1 = 6
+        var bil2 = 2
+
+        var penjumlahan = bil1 + bil2
+        var pengurangan = bil1- bil2
+        var perkalian = bil1 * bil2
+        var pembagian = bil1 / bil2
+        var modulus = bil1 % bil2
+
+        document.getElementById("hacktiv8").innerHTML = desc()
+
+        function hello(){
+            console.log("Hello")
+        }
+
+        function intro(){
+        document.getElementById("penjumlahan").innerHTML = bil1 + " + " + bil2 + " = " + penjumlahan
+        document.getElementById("pengurangan").innerHTML = bil1 + " - " + bil2 + " = " + pengurangan
+        document.getElementById("perkalian").innerHTML = bil1 + " * " + bil2 + " = " + perkalian
+        document.getElementById("pembagian").innerHTML = bil1 + " / " + bil2 + " = " + pembagian
+        document.getElementById("modulus").innerHTML = bil1 + " % " + bil2 + " = " + modulus
+        }
+
+        function desc(){
+            document.getElementById("h8").innerHTML = "Hacktiv8 front end web development"
+            return "<b>Hacktiv8 front end web development</b>"
+        }
+
+        console.log(desc())
+        console.log(intro())
+    </script>
+</body>
+</html>
