@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <label>Mencari Huruf Besar</label><br/>
+    <label>Pesan : </label>
+    <input type="text" id="pesan"><br/>
+    <button onclick="huruf()">Cek Huruf</button><br/>
+    <button onclick="search()">Cek SC</button><br/>
+    <button onclick="char()">Cek Karakter</button><br/>
+    <button onclick="huruf()">Cek</button><br/>
+    <div id="hasil"></div>
+    
+
+    <script>
+        // mencari huruf besar
+        function huruf(){
+            var i = document.getElementById("pesan").value
+            var n = /ABCDEFGHIJKLMNOPQRSTUVWXYZ]/i
+            console.log(i + " " + n)
+
+            if(n.test(i) === false){
+                document.getElementById("hasil").innerHTML = "Salah"
+            } else {
+                document.getElementById("hasil").innerHTML = i
+            }
+        }
+
+
+        // mencari huruf besar SC (hanya SC)
+        function search() {
+            var i = document.getElementById("pesan").value
+            var n = /SC/i
+            console.log(i + " " + n)
+
+            if(n.test(i) === false){
+                document.getElementById("hasil").innerHTML = "Salah"
+            } else {
+                document.getElementById("hasil").innerHTML = i
+            }
+        }
+
+        // mencari data/karakter terakhir (T)
+        function char() {
+            var i = document.getElementById("pesan").value
+            var n = 
+            console.log(i + " " + n)
+
+            if(n.test(i) === false){
+                document.getElementById("hasil").innerHTML = "Salah"
+            } else {
+                document.getElementById("hasil").innerHTML = i
+            }
+        }
+
+        // mencari data/karakter pertama (B)
+        function charPertama() {
+            var i = document.getElementById("pesan").value
+            var n = 
+            console.log(i + " " + n)
+
+            if(n.test(i) === false){
+                document.getElementById("hasil").innerHTML = "Salah"
+            } else {
+                document.getElementById("hasil").innerHTML = i
+            }
+        }
+
+        // manjadikan satu menggunakan huruf kecil dan menghapus space 
+
+        function charPertama() {
+            var i = document.getElementById("pesan").value
+            var n = 
+            console.log(i + " " + n)
+
+            if(n.test(i) === false){
+                document.getElementById("hasil").innerHTML = "Salah"
+            } else {
+                document.getElementById("hasil").innerHTML = i
+            }
+        }
+
+    </script>
+
+</body>
+</html>

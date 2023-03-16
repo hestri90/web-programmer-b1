@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Email</title>
+</head>
+<body>
+    <label>Konfirmasi Data</label><br/>
+    <label>Email : </label>
+    <input type="email" id="email">
+    <button onclick="cari()">Cek</button>
+    <div id="hasil"></div>
+
+    <script>
+        function cari(){
+            var text = document.getElementById("email").value
+            var n = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
+            console.log(n)
+
+            if(n.test(text) === false){
+                document.getElementById("hasil").innerHTML = "Salah"
+            } else {
+                document.getElementById("hasil").innerHTML = text
+            }
+        }
+
+    </script>
+
+</body>
+</html>
